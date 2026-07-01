@@ -73,10 +73,11 @@ int main(){
 // solicitar que o usuario digite os pontos turisticos da carta 1
     printf("Pontos Turisticos: \n");
     scanf("%d", &pturistico1);
+    printf("Carta 1 cadastrada com sucesso! \n");
     // fim da carta 1
 
  // solicitar ao usuario digitar os dados das cartas de super trunfo de numero 2   
-    printf("Cadastro da Carta 2bh: \n");
+    printf("Cadastro da Carta 2: \n");
 // solicitar que o usuario digite o estado, codigo, nome da cidade, populacao, area, pib e pontos turisticos da carta 2
     printf("Estado: \n");
    //nesse scanf abaixo eu usei o " %[^\n]" para que o usuario possa digitar o estado com espacos, caso contrario ele nao conseguiria digitar estados com espacos
@@ -99,6 +100,7 @@ int main(){
 // solicitar que o usuario digite os pontos turisticos da carta 2
     printf("Pontos Turisticos: \n");
     scanf("%d", &pturistico2);
+    printf("Carta 2 cadastrada com sucesso! \n");
 //fim da carta 2
 
 //nessa parte do codigo eu vou imprimir na tela os dados das cartas de super trunfo de numero 1 e 2 que foram digitados pelo usuario.
