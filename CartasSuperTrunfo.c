@@ -15,6 +15,19 @@
 //} 
 
 #include <stdio.h>
+//o void serve para que a funcao nao retorne nenhum valor, nesse caso a funcao imprimirCarta vai apenas imprimir na tela os dados das cartas de super trunfo que foram digitados pelo usuario.
+//utilizei o void para evitar a repeticao de codigo para cada variavel utilizando o scanf e printf em cada carta que for criada ou adiconada futuramente.
+void imprimirCarta(char estado[], int idcarta, char nomecity[], int populacao, float area, float pib, int pturistico) {
+  
+    printf("Estado: %s\n", estado);
+    printf("Codigo: %d\n", idcarta);
+    printf("Nome da Cidade: %s\n", nomecity);
+    printf("Populacao: %d\n", populacao);
+    printf("Area: %.2f\n", area);
+    printf("PIB: %.2f\n", pib);
+    printf("Pontos Turisticos: %d\n", pturistico);
+}
+//a funcao main vai ser responsavel por solicitar ao usuario digitar os dados das cartas de super trunfo de numero 1 e 2, e depois imprimir na tela os dados digitados pelo usuario.
 int main(){
 // declarar as variaveis para armazenar os dados das cartas de super trunfo de numero 1
 
@@ -37,58 +50,58 @@ int main(){
     int pturistico2;
 
     // solicitar ao usuario digitar os dados das cartas de super trunfo de numero 1
-    printf("Carta1: \n");
+    printf("Cadastro da Carta 1: \n");
 // solicitar que o usuario digite o estado, codigo, nome da cidade, populacao, area, pib e pontos turisticos da carta 1
     printf("Estado: \n");
     //nesse scanf abaixo eu usei o " %[^\n]" para que o usuario possa digitar o estado com espacos, caso contrario ele nao conseguiria digitar estados com espacos
     scanf(" %[^\n]", estado1);
-
+// solicitar que o usuario digite o codigo da carta 1
     printf("Codigo: \n");
     scanf("%d", &idcarta1);
-
+// solicitar que o usuario digite o nome da cidade da carta 1
     printf("Nome da Cidade: \n");
     scanf(" %[^\n]", nomecity1);
-
+// solicitar que o usuario digite a populacao da carta 1
     printf("Populacao: \n");
     scanf("%d", &populacao1);
-
+// solicitar que o usuario digite a area da carta 1
     printf("Area: \n");
     scanf("%f", &area1);
-
+// solicitar que o usuario digite o pib da carta 1
     printf("PIB: \n");
     scanf("%f", &pib1);
-
+// solicitar que o usuario digite os pontos turisticos da carta 1
     printf("Pontos Turisticos: \n");
     scanf("%d", &pturistico1);
     // fim da carta 1
 
  // solicitar ao usuario digitar os dados das cartas de super trunfo de numero 2   
-    printf("Carta2: \n");
+    printf("Cadastro da Carta 2bh: \n");
 // solicitar que o usuario digite o estado, codigo, nome da cidade, populacao, area, pib e pontos turisticos da carta 2
     printf("Estado: \n");
    //nesse scanf abaixo eu usei o " %[^\n]" para que o usuario possa digitar o estado com espacos, caso contrario ele nao conseguiria digitar estados com espacos
     scanf(" %[^\n]", estado2);
-
+// solicitar que o usuario digite o codigo da carta 2
     printf("Codigo: \n");
     scanf("%d", &idcarta2);
-
+// solicitar que o usuario digite o nome da cidade da carta 2
     printf("Nome da Cidade: \n");
     scanf(" %[^\n]", nomecity2);
-
+// solicitar que o usuario digite a populacao da carta 2
     printf("Populacao: \n");
     scanf("%d", &populacao2);
-
+// solicitar que o usuario digite a area da carta 2
     printf("Area: \n");
     scanf("%f", &area2);
-
+// solicitar que o usuario digite o pib da carta 2
     printf("PIB: \n");
     scanf("%f", &pib2);
-
+// solicitar que o usuario digite os pontos turisticos da carta 2
     printf("Pontos Turisticos: \n");
     scanf("%d", &pturistico2);
 //fim da carta 2
 
-//nessa parte do codigo eu vou imprimir na tela os dados das cartas de super trunfo de numero 1 e 2 
+//nessa parte do codigo eu vou imprimir na tela os dados das cartas de super trunfo de numero 1 e 2 que foram digitados pelo usuario.
     printf("A carta 1 é: \n");
     imprimirCarta(estado1, idcarta1, nomecity1, populacao1, area1, pib1, pturistico1);
 
