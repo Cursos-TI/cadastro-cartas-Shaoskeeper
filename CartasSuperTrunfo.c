@@ -26,8 +26,8 @@ void imprimirCarta(char estado[], int idcarta, char nomecity[], int populacao, f
     printf("Area: %.2f\n", area);
     printf("PIB: %.2f\n", pib);
     printf("Pontos Turisticos: %d\n", pturistico);
-    printf("Densidade Populacional: %.2f\n", densidade);
-    printf("PIB Per Capita: %.2f\n", pibcapita);
+    printf("Densidade Populacional: %2.f\n", densidade);
+    printf("PIB Per Capita: %2.f\n", pibcapita);
     
 }
 
@@ -91,6 +91,7 @@ int main(){
     printf("PIB per Capita: %.2f\n", pibcapita1);
 // imprimir a conclusao da primeira carta
     printf("Carta 1 cadastrada com sucesso! \n");
+    
     // fim da carta 1
 
  // solicitar ao usuario digitar os dados das cartas de super trunfo de numero 2   
@@ -119,12 +120,13 @@ int main(){
     scanf("%d", &pturistico2);
 // calcular a densidade populacional 
     densidade2 = (populacao2 / area2);
-    printf("Densidade Populacional: %.2f\n", densidade2);
+    printf("Densidade Populacional: %.2f\n", densidade2); 
 // calcular o pib per capita    
     pibcapita2 = (pib2 / populacao2);
     printf("PIB per Capita: %.2f\n", pibcapita2);
-// imprimir a conclusao da segunda carta
+// imprimir a conclusao da primeira carta
     printf("Carta 2 cadastrada com sucesso! \n");
+
 //fim da carta 2
 
 //nessa parte do codigo eu vou imprimir na tela os dados das cartas de super trunfo de numero 1 e 2 que foram digitados pelo usuario.
